@@ -1,0 +1,146 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpeg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin: 0;
+    color: #fff;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: gold;
+}
+
+/* Draggable Items Styling */
+.draggableContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 1px solid lightblue;
+    margin-bottom: 20px;
+}
+
+.box {
+    display: flex;
+    background-color: #FDEAE3;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 150px;
+    margin: 10px;
+    cursor: grab;
+    font-weight: bold;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px;
+}
+
+.box:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4); /* More pronounced shadow on hover */
+}
+
+/* Make each box have a different color */
+#box1 {
+    background-color: #FF5733; /* Red */
+}
+
+#box2 {
+    background-color: #33FF57; /* Green */
+}
+
+#box3 {
+    background-color: #3357FF; /* Blue */
+}
+
+#box4 {
+    background-color: #FF33A1; /* Pink */
+}
+
+#box5 {
+    background-color: #FFC300; /* Yellow */
+}
+
+#box6 {
+    background-color: #DA70D6; /* Orchid */
+}
+
+#box7 {
+    background-color: #1E90FF; /* Dodger Blue */
+}
+
+#box8 {
+    background-color: #32CD32; /* Lime Green */
+}
+
+#box9 {
+    background-color: #FF6347; /* Tomato */
+}
+
+#box10 {
+    background-color: #FF1493; /* Deep Pink */
+}
+
+.itemImage {
+    width: 30px;
+    margin-right: 10px;
+}
+
+/* Droppable Areas Styling */
+.droppableContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.droppable {
+    background-color: #E0E0E0; /* Light gray */
+    height: 80px;
+    width: 180px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #333; /* Dark text color */
+    border: 3px dashed #aaa; /* Dashed border for the droppable areas */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.droppable:hover {
+    background-color: #B0B0B0; /* Darker gray when hovered */
+    border-color: #555; /* Change border color on hover */
+}
+
+.droppable.accepting {
+    background-color: #A8D8F0; /* Light blue when a valid item is dragged over */
+    border-color: #008CBA; /* Blue border for accepted droppables */
+}
+
+/* Reset Button */
+#resetBtn {
+    background-color: lightblue;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#resetBtn:hover {
+    background-color: #00bfff;
+}

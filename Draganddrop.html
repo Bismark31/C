@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Clothing Game</title>
+    <link rel="stylesheet" href="indexStyle.css">
+    <script src="indexScript.js" defer></script>
+</head>
+<body>
+    <header><h1>Clothing Drag and Drop Game</h1></header>
+    
+    <!-- Scoreboard Section -->
+    <div class="scoreboard">
+        <p id="score">Score: 0</p>
+        <p id="remarks"></p>
+    </div>
+
+    <!-- Draggable Container -->
+    <div class="draggableContainer">
+        <div class="box" draggable="true" id="box1">
+            <img src="shirt.jpeg" alt="Shirt" class="itemImage"> Shirt
+        </div>
+        <div class="box" draggable="true" id="box2">
+            <img src="pants.jpeg" alt="Pants" class="itemImage"> Pants
+        </div>
+        <div class="box" draggable="true" id="box3">
+            <img src="shoes.jpeg" alt="Shoes" class="itemImage"> Shoes
+        </div>
+        <div class="box" draggable="true" id="box4">
+            <img src="hat.jpeg" alt="Hat" class="itemImage"> Hat
+        </div>
+        <div class="box" draggable="true" id="box5">
+            <img src="jacket.jpeg" alt="Jacket" class="itemImage"> Jacket
+        </div>
+        <div class="box" draggable="true" id="box6">
+            <img src="socks.jpeg" alt="Socks" class="itemImage"> Socks
+        </div>
+        <div class="box" draggable="true" id="box7">
+            <img src="tshirt.jpeg" alt="T-shirt" class="itemImage"> T-shirt
+        </div>
+        <div class="box" draggable="true" id="box8">
+            <img src="sweater.jpeg" alt="Sweater" class="itemImage"> Sweater
+        </div>
+        <div class="box" draggable="true" id="box9">
+            <img src="boots.jpeg" alt="Boots" class="itemImage"> Boots
+        </div>
+        <div class="box" draggable="true" id="box10">
+            <img src="scarf.jpeg" alt="Scarf" class="itemImage"> Scarf
+        </div>
+    </div>
+    
+    <!-- Droppable Container -->
+    <div class="droppableContainer">
+        <div class="droppable" data-draggable-id="box1">Top Wear</div>
+        <div class="droppable" data-draggable-id="box2">Bottom Wear</div>
+        <div class="droppable" data-draggable-id="box3">Footwear</div>
+        <div class="droppable" data-draggable-id="box4">Accessories</div>
+        <div class="droppable" data-draggable-id="box5">Top Wear</div>
+        <div class="droppable" data-draggable-id="box6">Footwear</div>
+        <div class="droppable" data-draggable-id="box7">Top Wear</div>
+        <div class="droppable" data-draggable-id="box8">Top Wear</div>
+        <div class="droppable" data-draggable-id="box9">Footwear</div>
+        <div class="droppable" data-draggable-id="box10">Accessories</div>
+    </div>
+
+    <!-- Description Box -->
+    <div class="description">
+        <p>Drag the clothing items to their correct categories. Try to match the correct items with their respective categories to score points.</p>
+    </div>
+
+    <!-- Reset Button -->
+    <div class="resetContainer">
+        <button id="resetBtn">Reset Game</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Game created by Bismark L. De Asis</p>
+    </footer>
+</body>
+</html>
